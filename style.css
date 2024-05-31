@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: hsl(30, 54%, 90%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.parent {
+    background-color: white;
+    width: 720px;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.img {
+    padding: 40px;
+    padding-bottom: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+.main {
+    padding: 40px;
+    padding-top: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+.prep-box {
+    background-color: hsl(330, 100%, 98%);
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+p,
+ul,
+ol,
+.attribution,
+.nutrition-value,
+.nutrition-element {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    margin: 0px;
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+strong {
+    font-weight: 600;
+}
+
+ul {
+    margin-bottom: 0px;
+    color: hsl(30, 10%, 34%);
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+li {
+    padding-left: 22px;
+}
+
+.prep-box>ul>li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.main>ul>li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+p {
+    color: hsl(30, 10%, 34%);
+    line-height: 22.5px;
+}
+
+hr {
+    color: hsl(30, 18%, 87%);
+    opacity: 0.3;
+    width: 100%;
+}
+
+hr.normal {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ol {
+    margin-bottom: 0px;
+    color: hsl(30, 10%, 34%);
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+.nutrition-value p {
+    margin: 0px;
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition-element p {
+    margin: 0px;
+    margin-left: 25px;
+}
+
+.nutrition-element, .nutrition-value {
+    width: 50%; /* they still remain spaced apart when the window size is changed */
+    display: inline-block; /* so that they sit next to each other */
+}
+
+.nutrition-table {
+    padding-top: 15px;
+}
+
+a:link {
+    color: hsl(14, 45%, 36%);
+}
+
+a:visited {
+    color: hsl(332, 51%, 32%);
+
+}
+
+.attribution {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 760px) {
+    .parent {
+        width: 100%;
+    }
+
+    body {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    html {
+        padding: 0px;
+    }
+    
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .parent {
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    .main {
+        padding: 30px;
+    }
+
+    .img {
+        padding: 0px;
+    }
+
+    img {
+        border-radius: 0px;
+        width: 100%;
+    };
+}
