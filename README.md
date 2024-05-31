@@ -25,7 +25,7 @@ My job was to create a recipe page using HTML and CSS, making it look as close t
 
 ### Links
 
-- [Solution URL (hosted on github pages)](#)
+- [Solution URL (hosted on github pages)](https://sushiontoast.github.io/frontend-mentor-recipe-page-challenge/)
 
 ## My process
 
